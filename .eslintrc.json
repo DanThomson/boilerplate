@@ -29,6 +29,12 @@
     "no-console": 0,
 
     // 1 - give warnings, 120 - characters per line, 2 - tab width
-    "max-len": [1, 120, 2]
+    "max-len": [1, 120, 2],
+    "react-in-jsx-scope": 0
+  },
+
+  "globals": {
+    "React": false,
+    "ReactDOM": false,
   }
 }
