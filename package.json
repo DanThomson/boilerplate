@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel src/index.js --out-file app/index.js"
+    "build-once": "./node_modules/.bin/babel src --out-dir app",
+    "build": "./node_modules/.bin/babel src --watch --out-dir app --source-maps inline"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,15 @@
   "author": "Daniel Thomson",
   "license": "unlicense",
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "bootstrap": "^3.3.7",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-bootstrap": "^0.30.7"
   },
   "devDependencies": {
-    "babel-cli": "^6.16.0",
-    "babel-preset-latest": "^6.16.0",
+    "babel-cli": "^6.18.0",
+    "babel-preset-babili": "0.0.9",
+    "babel-preset-env": "0.0.9",
     "babel-preset-react": "^6.16.0"
   }
 }

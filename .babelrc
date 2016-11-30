@@ -1,9 +1,7 @@
 {
   "presets": [
-    "latest",
+    "babili",
+    ["env", { "targets": {"chrome": 54}, "modules": false, "debug": true }],
     "react"
-  ],
-  "plugins": [
-    ["transform-strict-mode", { "strict": true }]
   ]
 }
