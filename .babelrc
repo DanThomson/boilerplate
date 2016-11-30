@@ -1,6 +1,5 @@
 {
   "presets": [
-    "babili",
     ["env", { "targets": {"chrome": 54}, "modules": false, "debug": true }],
     "react"
   ]
