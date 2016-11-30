@@ -1,6 +1,10 @@
 {
   "presets": [
-    ["env", { "targets": {"chrome": 54}, "modules": false, "debug": true }],
+    ["env", {
+      "targets": {"chrome": 54},
+      "modules": false,
+      "debug": true
+    }],
     "react"
   ]
 }
